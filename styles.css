@@ -303,6 +303,10 @@ BANNER
   font-size: 12px;
   color: #fff;
   margin: 0;
+  white-space: nowrap; /* Sem quebra de linha por padrão */
+  overflow: hidden; /* Esconde texto adicional caso ultrapasse a largura */
+  text-overflow: ellipsis; /* Opcional: adiciona "..." no final do texto se necessário */
+
   margin-bottom: 8px;
   overflow: hidden; /* Esconde o texto antes da animação */
   white-space: nowrap; /* Mantém tudo em uma linha (remova se precisar de quebras) */
@@ -316,7 +320,7 @@ BANNER
     max-width: 0;
   }
   to {
-    max-width: 223.4ch; /* Garante que o texto apareça todo */
+    max-width: 224.4ch; /* Garante que o texto apareça todo */
   }
 }
 
@@ -330,6 +334,7 @@ BANNER
 /* Ajustes para dispositivos móveis */
 @media screen and (max-width: 1024px) {
   .banner__text {
+    white-space: normal; /* Permite quebra de linha em dispositivos móveis */
     font-size: 12px;
     max-width: 90%; /* Limita a largura do texto */
     left: 5em; /* Ajusta a posição do texto */
@@ -341,6 +346,7 @@ BANNER
 
 @media screen and (max-width: 767px) {
   .banner__text {
+    white-space: normal; /* Permite quebra de linha em dispositivos móveis */
     font-size: 10px; /* Diminui o tamanho da fonte */
     max-width: 85%; /* Limita a largura para dispositivos menores */
     left: 2em; /* Ajusta a posição */
@@ -352,6 +358,7 @@ BANNER
 
 @media screen and (max-width: 480px) {
   .banner__text {
+    white-space: normal; /* Permite quebra de linha em dispositivos móveis */
     font-size: 8px; /* Ajusta ainda mais o tamanho da fonte */
     max-width: 90%; /* Limita o texto a 90% da largura */
     left: 1em; /* Reposiciona para evitar excesso lateral */
