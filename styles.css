@@ -329,17 +329,23 @@ BANNER
 /* Estilos responsivos para dispositivos móveis */
 @media (max-width: 768px) {
   .banner__text {
-    font-size: 10px; /* Reduz o tamanho da fonte para caber melhor */
-    left: 4em; /* Ajusta a posição para telas menores */
-    margin-bottom: 6px; /* Reduz o espaçamento inferior */
+    font-size: 10px; /* Reduz o tamanho da fonte */
+    left: 4em; /* Ajusta a posição */
+    margin-bottom: 6px; /* Reduz o espaçamento */
+    white-space: normal; /* Permite a quebra de linha */
+    line-height: 1.5; /* Adiciona espaço entre as linhas para melhorar a legibilidade */
+    animation: typing 8s steps(120, end) forwards, blink 0.6s infinite; /* Ajusta o tempo da animação */
   }
 }
 
 @media (max-width: 480px) {
   .banner__text {
-    font-size: 8px; /* Ajusta ainda mais o tamanho da fonte */
-    left: 2em; /* Ajusta a posição para telas menores */
-    margin-bottom: 4px; /* Reduz ainda mais o espaçamento inferior */
+    font-size: 8px; /* Ajusta o tamanho da fonte para telas menores */
+    left: 2em; /* Ajusta a posição */
+    margin-bottom: 4px; /* Reduz o espaçamento inferior */
+    white-space: normal; /* Garante que a quebra de linha funcione */
+    line-height: 1.5; /* Mantém a legibilidade */
+    animation: typing 10s steps(150, end) forwards, blink 0.6s infinite; /* Aumenta o tempo da animação */
   }
 }
 
