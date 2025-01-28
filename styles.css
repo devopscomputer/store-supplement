@@ -31,18 +31,66 @@ p {
   font-family: 'Nunito', sans-serif;
 }
 
+.btnn {
+  background-color: #da4747; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 10px; /* Tamanho da fonte */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: relative; /* Posição relativa */
+  left: 605px;
+  top: 14px; /* Distância do topo */
+  letter-spacing: 3px; /* Espaçamento entre letras */
+  font-weight: 500; /* Peso da fonte */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: center; /* Alinhamento do texto */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  border: 15px; /* Borda (ajustar conforme necessário) */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: 0.3s; /* Transição para efeitos */
+}
+
+
 .btn {
-  color: #fff;
-  padding: 30px 20px;
-  position: relative;
-  top: 14px;
-  font-size: 18px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  background-color: #da4747;
-  border-radius: 8px;
-  text-align: center;
-  text-transform: uppercase;
+  background-color: #da4747; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 10px; /* Tamanho da fonte */
+  padding: 10px 20px; /* Espaçamento interno */
+  position: relative; /* Posição relativa */
+  left: 15px;
+  top: 14px; /* Distância do topo */
+  letter-spacing: 3px; /* Espaçamento entre letras */
+  font-weight: 500; /* Peso da fonte */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-align: center; /* Alinhamento do texto */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  border: 15px; /* Borda (ajustar conforme necessário) */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: 0.3s; /* Transição para efeitos */
+}
+
+/* Media Query para telas menores */
+@media screen and (max-width: 1024px) {
+  .btn {
+    font-size: 16px; /* Reduzir o tamanho da fonte */
+    padding: 25px 15px; /* Ajustar o espaçamento */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 14px; /* Reduzir ainda mais o tamanho da fonte */
+    padding: 20px 10px; /* Ajustar o espaçamento */
+    top: 10px; /* Ajustar a posição */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 12px; /* Tamanho da fonte menor */
+    padding: 15px 5px; /* Ajustar o espaçamento */
+    top: 8px; /* Ajustar a posição */
+    letter-spacing: 2px; /* Reduzir o espaçamento entre letras */
+  }
 }
 
 .btn--opacity {
@@ -219,7 +267,8 @@ p {
 }
 
 .row--margin {
-  margin-bottom: 16px;
+  max-width: 700px;
+  margin-bottom: 4px;
 }
 
 /*--------------------------------
@@ -491,19 +540,10 @@ TYPE OF COFFEE
 }
 
 /* Botão */
-.btn {
-  background-color: #da4747;
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border: 15px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+
 
 .btn:hover {
-  background-color: #c0392b;
+  background-color: #f07c6f;
 }
 
 /*--------------------------------
