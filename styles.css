@@ -35,13 +35,12 @@ p {
   color: #fff;
   padding: 30px 20px;
   position: relative;
-  top: 30px;
-  gap: 5px;
-  font-size: 31px;
+  top: 14px;
+  font-size: 18px;
   letter-spacing: 3px;
   font-weight: 500;
   background-color: #da4747;
-  border-radius: 15px;
+  border-radius: 8px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -96,23 +95,22 @@ p {
 
 .coffee__imgt {
   position: relative;
-  top: 15em;
+  top: 1.8em;
   display: block;
-  width: 100%;
-  max-width: 280px;
+  max-width: 110px;
   height: auto;
-  min-height: 500px;
+  min-height: 100px;
   z-index: 1; /* Mantém a imagem acima */
   
 }
 
 .coffee__imgtt {
   position: relative;
-  top: -14em;
+  top: -7em;
   display: block;
-  max-width: 200px;
+  max-width: 80px;
   height: auto;
-  min-height: 400px;
+  min-height: 80px;
   z-index: 0; /* Mantém a imagem acima */
   animation: pulseBorder 1.5s infinite ease-in-out; /* Animação de luz pulsante na borda */
 
@@ -121,11 +119,11 @@ p {
 
 .coffee_imge {
   position: relative;
-  top: -13em;
+  top: -8em;
   display: block;
-  max-width: 300px;
+  max-width: 100px;
   height: auto;
-  min-height: 400px;
+  min-height: 100px;
   z-index: 0; /* Mantém a imagem acima */
   animation: pulseBorder 1.5s infinite ease-in-out; /* Animação de luz pulsante na borda */
 
@@ -133,11 +131,11 @@ p {
 
 .coffee_img {
   position: relative;
-  top: 15em;
+  top: 3em;
   display: block;
-  max-width: 300px;
+  max-width: 120px;
   height: auto;
-  min-height: 500px;
+  min-height: 100px;
   z-index: 1; /* Mantém a imagem acima */
 }
 
@@ -287,10 +285,10 @@ BANNER
 }
 
 .banner__title {
-  font-size: 86px;
+  font-size: 36px;
   color: #fff;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   letter-spacing: 1px;
   font-weight: 500;
   animation: opacity 3s;
@@ -299,12 +297,12 @@ BANNER
 
 .banner__text {
   position: relative;
-  left: 4em;
+  left: 8em;
   max-width: 200ch; /* Limita a largura para o efeito funcionar corretamente */
-  font-size: 27px;
+  font-size: 12px;
   color: #fff;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   overflow: hidden; /* Esconde o texto antes da animação */
   white-space: nowrap; /* Mantém tudo em uma linha (remova se precisar de quebras) */
   border-right: 3px solid rgba(255, 255, 255, 0.75); /* Simula um cursor piscando */
@@ -342,15 +340,19 @@ TYPE OF COFFEE
 }
 
 .sect__title {
+  position: relative;
+  bottom: 8em;
   margin-top: 0;
   text-transform: uppercase;
   line-height: 40px;
-  font-size: 40px;
+  font-size: 17px;
   margin-bottom: 0px;
 }
 
 .sect__subtitle {
-  font-size: 25px;
+  position: relative;
+  bottom: 15em;
+  font-size: 10px;
   margin-bottom: 0;
 }
 
@@ -373,9 +375,7 @@ TYPE OF COFFEE
 
 
 .coffee__descr {
-  position: relative;
-  top: 20px;
-  font-size: 26px;
+  font-size: 12px;
   line-height: 1.5;
   color: #666; /* Suavizando a cor para manter a harmonia visual */
 }
@@ -406,10 +406,9 @@ TYPE OF COFFEE
 /* Botão */
 .btn {
   background-color: #da4747;
-  
   color: #fff;
-  font-size: 28px;
-  padding: 18px 34px;
+  font-size: 12px;
+  padding: 10px 20px;
   text-transform: uppercase;
   border: 15px;
   cursor: pointer;
