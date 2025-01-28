@@ -295,6 +295,7 @@ BANNER
 }
 
 
+/* Animação para o efeito de digitação */
 .banner__text {
   position: relative;
   left: 8em;
@@ -326,28 +327,42 @@ BANNER
   }
 }
 
-/* Estilos responsivos para dispositivos móveis */
-@media (max-width: 768px) {
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 1024px) {
   .banner__text {
-    font-size: 10px; /* Reduz o tamanho da fonte */
-    left: 4em; /* Ajusta a posição */
-    margin-bottom: 6px; /* Reduz o espaçamento */
+    font-size: 12px;
+    max-width: 90%; /* Limita a largura do texto */
+    left: 5em; /* Ajusta a posição do texto */
     white-space: normal; /* Permite a quebra de linha */
-    line-height: 1.5; /* Adiciona espaço entre as linhas para melhorar a legibilidade */
+    line-height: 1.5; /* Adiciona espaçamento entre as linhas */
     animation: typing 8s steps(120, end) forwards, blink 0.6s infinite; /* Ajusta o tempo da animação */
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .banner__text {
-    font-size: 8px; /* Ajusta o tamanho da fonte para telas menores */
+    font-size: 10px; /* Diminui o tamanho da fonte */
+    max-width: 85%; /* Limita a largura para dispositivos menores */
     left: 2em; /* Ajusta a posição */
-    margin-bottom: 4px; /* Reduz o espaçamento inferior */
-    white-space: normal; /* Garante que a quebra de linha funcione */
-    line-height: 1.5; /* Mantém a legibilidade */
-    animation: typing 10s steps(150, end) forwards, blink 0.6s infinite; /* Aumenta o tempo da animação */
+    white-space: normal; /* Permite quebra de linha */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    animation: typing 10s steps(140, end) forwards, blink 0.6s infinite; /* Aumenta o tempo da animação */
   }
 }
+
+@media screen and (max-width: 480px) {
+  .banner__text {
+    font-size: 8px; /* Ajusta ainda mais o tamanho da fonte */
+    max-width: 90%; /* Limita o texto a 90% da largura */
+    left: 1em; /* Reposiciona para evitar excesso lateral */
+    white-space: normal; /* Permite quebra de linha */
+    line-height: 1.3; /* Espaçamento entre linhas menor para telas muito pequenas */
+    animation: typing 12s steps(160, end) forwards, blink 0.6s infinite; /* Ajusta o tempo para o texto longo */
+  }
+}
+
+
+
 
 
 
