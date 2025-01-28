@@ -298,7 +298,7 @@ BANNER
 .banner__text {
   letter-spacing: initial;
   position: relative;
-  left: 35em;
+  left: 0em;
   font-size: 15px;
   color: #fff;
 }
@@ -310,10 +310,7 @@ BANNER
   border-right: 3px solid rgba(255, 255, 255, 0.75); /* Cursor piscante */
 }
 
-.line1 {
-  
-  animation: typing-line1 4s steps(80, end) forwards, blink 0.6s infinite;
-}
+
 @keyframes remove-cursor {
   0% {
     border-color: rgba(255, 255, 255, 0.75);
@@ -323,10 +320,7 @@ BANNER
   }
 }
 
-.line2 {
-  opacity: 0; /* Começa invisível */
-  animation: typing-line2 9s steps(80, end) forwards, fade-in 0.5s 4s forwards, blink 0.6s infinite;
-}
+
 
 /* Animação de digitação da linha 1 */
 @keyframes typing-line1 {
@@ -796,7 +790,7 @@ RESPONSIVE
   }
   .sect__title, .description__title, .footer__big-title {
     line-height: 38px;
-    font-size: 28px;
+    font-size: 18px;
   }
   .footer__half {
     padding: 60px 90px;
@@ -827,7 +821,7 @@ RESPONSIVE
   }
   .sect__title, .description__title, .footer__big-title {
     line-height: 36px;
-    font-size: 26px;
+    font-size: 16px;
   }
   .half-sect__first {
     padding: 50px;
@@ -862,7 +856,7 @@ RESPONSIVE
   }
   .sect__title, .description__title {
     line-height: 30px;
-    font-size: 22px;
+    font-size: 12px;
     margin-bottom: 15px;
     margin-top: 75px;
   }
