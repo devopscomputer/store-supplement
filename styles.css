@@ -289,16 +289,17 @@ BANNER
   color: #fff;
   margin-top: 0;
   margin-bottom: 7px;
-  letter-spacing: 1px;
+  letter-spacing: 10px;
   font-weight: 500;
   animation: opacity 3s;
 }
 
 
 .banner__text {
+  letter-spacing: initial;
   position: relative;
-  left: 51em;
-  font-size: 12px;
+  left: 35em;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -343,7 +344,7 @@ BANNER
     border-color: rgba(255, 255, 255, 0.75); /* Cursor visível até quase o final */
   }
   100% {
-    max-width: 34.6%; /* Ajuste para se adaptar ao conteúdo */
+    max-width: 43.1%; /* Ajuste para se adaptar ao conteúdo */
     border-color: transparent; /* Remove o cursor no final */
   }
 }
@@ -354,7 +355,7 @@ BANNER
     max-width: 0;
   }
   to {
-    max-width: 33.1%; /* Ajuste para se adaptar ao conteúdo */
+    max-width: 41.4%; /* Ajuste para se adaptar ao conteúdo */
   }
 }
 
