@@ -289,7 +289,7 @@ BANNER
   color: #fff;
   margin-top: 0;
   margin-bottom: 7px;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
   font-weight: 500;
   animation: opacity 3s;
 }
@@ -382,9 +382,9 @@ BANNER
 @media screen and (max-width: 1024px) {
   .banner__text {
     white-space: normal; /* Permite quebra de linha em dispositivos móveis */
-    font-size: 12px;
+    font-size: 16px;
     max-width: 80%; /* Limita a largura do texto */
-    left: 5em; /* Ajusta a posição do texto */
+    left: 25em; /* Ajusta a posição do texto */
     white-space: normal; /* Permite a quebra de linha */
     line-height: 1.5; /* Adiciona espaçamento entre as linhas */
     animation: typing 8s steps(120, end) forwards, blink 0.6s infinite; /* Ajusta o tempo da animação */
@@ -394,7 +394,7 @@ BANNER
 @media screen and (max-width: 767px) {
   .banner__text {
     white-space: normal; /* Permite quebra de linha em dispositivos móveis */
-    font-size: 10px; /* Diminui o tamanho da fonte */
+    font-size: 14px; /* Diminui o tamanho da fonte */
     max-width: 75%; /* Limita a largura para dispositivos menores */
     left: 2em; /* Ajusta a posição */
     white-space: normal; /* Permite quebra de linha */
@@ -406,7 +406,7 @@ BANNER
 @media screen and (max-width: 480px) {
   .banner__text {
     white-space: normal; /* Permite quebra de linha em dispositivos móveis */
-    font-size: 8px; /* Ajusta ainda mais o tamanho da fonte */
+    font-size: 12px; /* Ajusta ainda mais o tamanho da fonte */
     max-width: 90%; /* Limita o texto a 90% da largura */
     left: 1em; /* Reposiciona para evitar excesso lateral */
     white-space: normal; /* Permite quebra de linha */
