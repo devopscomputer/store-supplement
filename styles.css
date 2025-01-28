@@ -326,6 +326,24 @@ BANNER
   }
 }
 
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  .banner__text {
+    font-size: 10px; /* Reduz o tamanho da fonte para caber melhor */
+    left: 4em; /* Ajusta a posição para telas menores */
+    margin-bottom: 6px; /* Reduz o espaçamento inferior */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__text {
+    font-size: 8px; /* Ajusta ainda mais o tamanho da fonte */
+    left: 2em; /* Ajusta a posição para telas menores */
+    margin-bottom: 4px; /* Reduz ainda mais o espaçamento inferior */
+  }
+}
+
+
 
 
 /*--------------------------------
