@@ -9,7 +9,7 @@ RESET
 }
 
 html, body {
-  background-color: #000000;
+  background-color: #1d140b;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -107,6 +107,7 @@ img {
   font-size: 17px;
   margin-bottom: 20px;
   
+  
 }
 
 .sect__subtitle {
@@ -132,11 +133,6 @@ img {
  width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
   height: 150px;
 
-}
-.logo-container {
-  display: flex; /* Usar flexbox */
-  flex-direction: column; /* Alinha os itens verticalmente */
-  align-items: center; /* Centraliza os itens horizontalmente */
 }
 
 .storys-img {
@@ -314,10 +310,7 @@ img {
 
 
 
-.sect--grey {
-  height: 40%;
-  background-color: #1d140b;
-}
+
 
 
 
@@ -345,7 +338,7 @@ BANNER
 ---------------------------------*/
 .banner {
   background-image: url("./images/bg3.png");
-  background-color: #000;
+  background-color: #1d140b;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -618,54 +611,86 @@ STORY
 
 /*--------------------------------
 FOOTER
----------------------------------*/
+/* Rodapé */
 .footer {
-  display: table;
-  width: 100%;
-  position: fixed; /* Mantém o footer fixo na parte inferior */
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  position: fixed; 
   bottom: 0;
-  left: 0;
-  z-index: -1;
+  left: 0; 
+  z-index: -1; 
+  padding: 2px; 
+  background: rgba(255, 255, 255, 0.052); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 0 30px rgba(255, 255, 255, 0.5); 
+  transition: all 0.3s ease; 
 }
 
-.footer__half {
-  width: 50%;
-  display: table-cell;
-  padding: 100px 140px;
+.footer:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 50px rgba(255, 255, 255, 0.7); 
 }
 
-.footer__half-1 {
-  background-image: url('https://image.ibb.co/mRGjDm/section_bg_7.jpg');
-  background-position: left center;
+.logo-container {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: -30px; 
+}
+
+.footer__logo {
+  width: 500px; 
+  height: 130px;
+  background-image: url('/images/log.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
-.footer__half-2 {
-  background-color: #000;
+.contact-info {
+  text-align: center; 
+  margin-bottom: -10px; 
 }
 
-.footer__big-title {
-  margin-top: 0;
-  text-transform: uppercase;
-  line-height: 40px;
-  font-size: 30px;
-  margin-bottom: 25px;
-  color: #fff;
+.cert-container {
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+
+.cert-images {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px; 
+}
+
+.cert-logo {
+  width: 55px; 
+  margin: 0 5px; 
+}
+
+.footer-rights {
+  color: white;
+  font-size: 11px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(202, 56, 56, 0.3); 
+  text-align: center; 
+}
+
+/* Efeitos de texto */
+.phone-number, .support-email {
+  color: white; 
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(202, 56, 56, 0.3); 
 }
 
 .footer__title {
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 10px;
-  color: #daa37f;
-}
-
-.footer__desc {
-  color: #d7d7d7;
-  margin-bottom: 25px;
+  margin: 5px 0; /* Ajusta a margem */
+  color: #ca3838;
+  text-shadow: 0 0 5px rgba(202, 56, 56, 0.5), 0 0 10px rgba(202, 56, 56, 0.3); 
 }
 
 /*--------------------------------
