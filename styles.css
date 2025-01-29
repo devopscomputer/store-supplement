@@ -663,6 +663,23 @@ FOOTER
   display: flex; 
   justify-content: center; 
   margin-top: 10px; 
+  
+}
+.seg-logo {
+  width: 40px; /* Ajuste o tamanho conforme necessário */
+  margin-left: 10px; /* Espaçamento entre as logos */
+}
+
+.payment-image {
+  position: absolute; /* Permite posicionar a imagem no canto */
+  right: 20px; /* Distância do lado direito */
+  bottom: 20px; /* Distância do fundo */
+}
+
+.payment-logo {
+  padding-right: 60px;
+  padding-bottom: 30px;
+  width: 400px; /* Ajuste o tamanho conforme necessário */
 }
 
 .cert-logo {
